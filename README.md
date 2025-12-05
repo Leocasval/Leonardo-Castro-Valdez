@@ -12,7 +12,7 @@ if (isset($_SESSION["mensaje"])) {
     $mensaje = $_SESSION["mensaje"];
     unset($_SESSION["mensaje"]);
 }
-R
+
 // Aqui se obtiene la categoria para saber en que categoria pertenece el producto
 
 $categorias = $pdo->query("SELECT * FROM categorias")->fetchAll(PDO::FETCH_ASSOC);
